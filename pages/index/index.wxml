@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="content">
+  <view class="progress_box">
+    <canvas class="progress_bg" canvas-id="canvasProgressbg" wx:if="{{!bgImg}}"></canvas>
+    <image class="progress_bg_img" src="{{bgImg}}" wx:else/>
+    <canvas class="progress_canvas" canvas-id="canvasProgress" wx:if="{{!canvasImg}}"></canvas>
+    <image class="progress_canvas_img" src="{{canvasImg}}" wx:else/>
+    <view class="progress_text">
+      <text class="progress_info"> {{progress_txt}}</text>
+      <text class="progress_num" wx:if="{{progress_num}}">{{progress_num}}<text class="percent">%</text></text>
+    </view>
+  </view>
+  <view class="recordBtn" bindtap="changeModal">记录成绩</view>
+</view>
+<view class="mask" wx:if="{{showModal}}"></view>
+<view class="ruleModal" wx:if="{{showModal}}">
+  <view class="modalTit">本次得分</view>
+  <view class="modalData">
+    <text>{{value}}</text>分
+  </view>
+  <view class="rule">
+    <scale min="1" max="100" int="{{false}}" step="5" fiexNum="60" single="10" h="80" active="{{val}}" styles="{{styles}}" bindvalue="bindvalue"></scale>
+  </view>
+  <view class="btnGroup">
+    <view class="leftBtn" bindtap="changeModal">取消</view>
+    <view class="rightBtn" bindtap="submitGoal">确定</view>
+  </view>
+</view>

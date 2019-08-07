@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "scale": "/components/wx-scale/wx-scale"
+  },
+  "navigationBarTitleText": "转圈动画+游标尺"
+}

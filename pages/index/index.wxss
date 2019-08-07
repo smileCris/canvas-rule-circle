@@ -1,0 +1,155 @@
+/**index.wxss**/
+.content {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress_box {
+  position: relative;
+  width: 340rpx;
+  height: 340rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 340rpx;
+  height: 340rpx;
+}
+
+.progress_bg_img {
+  position: absolute;
+  width: 340rpx;
+  height: 340rpx;
+  z-index: 1;
+}
+
+.progress_canvas {
+  width: 340rpx;
+  height: 340rpx;
+}
+
+.progress_canvas_img {
+  width: 340rpx;
+  height: 340rpx;
+  z-index: 100;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress_info {
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+}
+
+.progress_num {
+  font-size: 62rpx;
+  padding-left: 10rpx;
+}
+
+.percent {
+  font-size: 36rpx;
+}
+
+.recordBtn, .settingBtn {
+  width: 320rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recordBtn {
+  color: #fff;
+  margin-top: 10rpx;
+  background: #ff7e7c;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 1000;
+  opacity: 0.6;
+}
+
+.ruleModal {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 670rpx;
+  z-index: 1001;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.modalTit {
+  font-size: 34rpx;
+  padding-top: 30rpx;
+  text-align: center;
+}
+
+.modalData {
+  color: #ff7e7c;
+  font-size: 26rpx;
+  padding: 40rpx 0;
+  text-align: center;
+}
+
+.modalData text {
+  font-size: 72rpx;
+  padding-right: 10rpx;
+}
+
+.rule {
+  position: relative;
+  overflow: hidden;
+}
+
+.btnGroup {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  height: 105rpx;
+  position: fixed;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+  background: #ff7e7c;
+}
+
+.leftBtn, .rightBtn {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftBtn {
+  border-right: 1rpx solid #fdcdcd;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
